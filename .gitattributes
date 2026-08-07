@@ -1,0 +1,9 @@
+*.mp4 binary
+*.png binary
+*.pkt binary
+
+*.txt text eol=lf
+*.md text eol=lf
+
+# Improve GitHub language statistics for Cisco-style reference configs.
+labs/**/configs/*.txt linguist-language=Cisco-IOS

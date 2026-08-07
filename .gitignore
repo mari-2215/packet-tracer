@@ -1,0 +1,14 @@
+# Packet Tracer temporary and backup files
+*.tmp
+*.bak
+*.autosave
+
+# Local editing artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Render scratch space
+work/
+*.log
+

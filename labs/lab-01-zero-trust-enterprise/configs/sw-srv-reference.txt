@@ -1,0 +1,56 @@
+! LAB-ONLY REFERENCE CONFIGURATION
+! Author: mari-2215
+
+enable
+configure terminal
+hostname SW-SRV
+
+vlan 10
+ name USERS
+vlan 20
+ name FINANCE
+vlan 30
+ name SERVERS
+vlan 40
+ name IT
+vlan 50
+ name GUEST
+vlan 99
+ name MANAGEMENT
+vlan 999
+ name BLACKHOLE
+
+interface fastEthernet0/24
+ description TRUNK-TO-SW-CORE
+ switchport mode trunk
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 10,20,30,40,50,99
+ no shutdown
+
+interface fastEthernet0/1
+ description WEB-DNS
+ switchport mode access
+ switchport access vlan 30
+ spanning-tree portfast
+ no shutdown
+
+interface range fastEthernet0/2-23
+ description UNUSED-BLACKHOLE
+ switchport mode access
+ switchport access vlan 999
+ shutdown
+
+interface vlan 99
+ ip address 10.10.99.4 255.255.255.0
+ no shutdown
+
+ip default-gateway 10.10.99.1
+end
+copy running-config startup-config
+
+! Recommended verification
+show vlan brief
+show interfaces trunk
+show interfaces status
+show cdp neighbors
+
