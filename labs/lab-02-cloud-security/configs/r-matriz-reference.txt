@@ -1,0 +1,20 @@
+! Lab 02 reference configuration
+! Author: mari-2215
+! Lab-only documentation; verify interface names on the selected Packet Tracer image.
+
+hostname R-MATRIZ
+
+interface GigabitEthernet0/0
+ description HEADQUARTERS-LAN
+ ip address 10.20.0.1 255.255.255.0
+ no shutdown
+
+interface GigabitEthernet0/1
+ description WAN-TO-R-CLOUD
+ ip address 198.51.100.1 255.255.255.252
+ no shutdown
+
+ip route 172.16.0.0 255.255.0.0 198.51.100.2
+
+end
+write memory

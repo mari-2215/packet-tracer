@@ -18,12 +18,24 @@ A small enterprise network segmented into user, finance, server, IT, guest, mana
 
 ![Lab 01 validation](docs/assets/lab-01-cover.png)
 
+## Latest validated project
+
+### Lab 02 — Hybrid Cloud Security Architecture
+
+A headquarters-to-cloud topology with a routed WAN, segmented DMZ/application/database tiers, static web publication, least-privilege database access, and restricted bastion SSH administration.
+
+[Open the complete Lab 02 documentation](labs/lab-02-cloud-security/README.md)
+
+[Watch or download the edited Lab 02 validation video](labs/lab-02-cloud-security/video/Lab_02_Hybrid_Cloud_Security_Final.mp4)
+
+![Lab 02 final topology](labs/lab-02-cloud-security/evidence/final-topology.png)
+
 ## Portfolio roadmap
 
 | Project | Security focus | Status |
 |---|---|---|
 | [Lab 01 — Segmented Enterprise Network](labs/lab-01-zero-trust-enterprise/README.md) | VLAN segmentation, ACLs, SSH, DHCP and troubleshooting | Documented |
-| [Lab 02 — Cloud Security Architecture](labs/lab-02-cloud-security/README.md) | DMZ, private tiers, NAT and cloud control mapping | Planned |
+| [Lab 02 — Hybrid Cloud Security Architecture](labs/lab-02-cloud-security/README.md) | DMZ, private tiers, NAT, ACLs, bastion SSH and cloud control mapping | Validated |
 | [Lab 03 — Incident Detection and Containment](labs/lab-03-incident-response/README.md) | Logging, indicators, ACL containment and recovery | Planned |
 | [Lab 04 — Healthcare Network Segmentation](labs/lab-04-healthcare-segmentation/README.md) | Clinical, IoMT, administrative and guest isolation | Planned |
 | [Lab 05 — Resilient Branch Routing](labs/lab-05-ospf-resilience/README.md) | OSPF, path preference, failure and convergence | Planned |
@@ -93,4 +105,3 @@ These labs are defensive educational environments. They are not production archi
 
 **mari-2215**  
 GitHub: [github.com/mari-2215](https://github.com/mari-2215)
-
