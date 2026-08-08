@@ -1,0 +1,72 @@
+! Lab 02 reference configuration
+! Author: mari-2215
+! Replace credential placeholders with lab-only values.
+
+hostname R-CLOUD
+
+interface GigabitEthernet0/0
+ description WAN-TO-R-MATRIZ
+ ip address 198.51.100.2 255.255.255.252
+ ip nat outside
+ ip access-group WAN-IN in
+ no shutdown
+
+interface GigabitEthernet0/1
+ description TRUNK-TO-SW-CLOUD
+ no shutdown
+
+interface GigabitEthernet0/1.10
+ encapsulation dot1Q 10
+ description DMZ
+ ip address 172.16.10.1 255.255.255.0
+ ip nat inside
+
+interface GigabitEthernet0/1.20
+ encapsulation dot1Q 20
+ description APPLICATION
+ ip address 172.16.20.1 255.255.255.0
+
+interface GigabitEthernet0/1.30
+ encapsulation dot1Q 30
+ description DATABASE
+ ip address 172.16.30.1 255.255.255.0
+ ip access-group TO-DB out
+
+interface GigabitEthernet0/1.99
+ encapsulation dot1Q 99
+ description MANAGEMENT
+ ip address 172.16.99.1 255.255.255.0
+
+ip route 10.20.0.0 255.255.255.0 198.51.100.1
+
+ip nat inside source static tcp 172.16.10.11 80 198.51.100.2 80
+
+ip access-list extended WAN-IN
+ ! Corrected target form. The recorded artifact used 198.21.100.2 in this ACE.
+ permit tcp any host 198.51.100.2 eq www
+ permit ip 10.20.0.0 0.0.0.255 172.16.0.0 0.0.255.255
+ deny ip any 172.16.0.0 0.0.255.255
+ permit ip any any
+
+ip access-list extended TO-DB
+ permit tcp host 172.16.20.10 host 172.16.30.10 eq 1433
+ deny ip any 172.16.30.0 0.0.0.255
+
+access-list 20 permit host 172.16.20.20
+access-list 20 permit host 10.20.0.10
+
+ip domain-name cloud.lab
+username <admin-user> privilege 15 secret <lab-only-secret>
+
+! On the Packet Tracer image used for this lab, RSA generation was interactive:
+! crypto key generate rsa
+! Choose 1024 when prompted for the modulus size.
+
+ip ssh version 2
+line vty 0 4
+ transport input ssh
+ login local
+ access-class 20 in
+
+end
+write memory
