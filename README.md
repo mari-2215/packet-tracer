@@ -39,7 +39,7 @@ A headquarters-to-cloud topology with a routed WAN, segmented DMZ/application/da
 | [Lab 03 — Incident Detection and Containment](labs/lab-03-incident-response/README.md) | Logging, indicators, ACL containment and recovery | Planned |
 | [Lab 04 — Healthcare Network Segmentation](labs/lab-04-healthcare-segmentation/README.md) | Clinical, IoMT, administrative and guest isolation | Planned |
 | [Lab 05 — Resilient Branch Routing](labs/lab-05-ospf-resilience/README.md) | OSPF, path preference, failure and convergence | Planned |
-| [Lab 06 — Secure Administration](labs/lab-06-secure-administration/README.md) | SSH, AAA, RADIUS, RBAC and management-plane isolation | Planned |
+| [Lab 06 — Secure Management and IAM](labs/lab-06-secure-administration/README.md) | SSH, AAA/RADIUS design, local fallback and management-plane isolation | Validated with documented limitation |
 | [Packets from Hell](labs/packets-from-hell/README.md) | OSPF, TTL, routing loops, STP and themed packet journeys | Planned |
 
 ## Repository structure
