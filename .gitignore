@@ -12,3 +12,6 @@ desktop.ini
 work/
 *.log
 
+# Local video-editing and review scratch space
+.video-work-*/
+**/video/qa-temp/

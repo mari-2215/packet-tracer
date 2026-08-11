@@ -7,6 +7,8 @@
 
 [Watch or download the edited demonstration](video/Lab_01_portfolio_FINAL.mp4)
 
+[Download the Packet Tracer project](packet-tracer/Lab_01_Segmented_Enterprise_Network.pkt)
+
 ![VLAN 40 connectivity evidence](../../docs/assets/lab-01-vlan40.png)
 
 ## Executive summary
@@ -239,4 +241,3 @@ These are reference target configurations reconstructed from the documented desi
 ## Author
 
 Built and documented by **[mari-2215](https://github.com/mari-2215)**.
-
