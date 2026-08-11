@@ -9,6 +9,8 @@
 
 [Download the Packet Tracer project](packet-tracer/Lab_02_Hybrid_Cloud_Security.pkt)
 
+![Lab 02 cover](evidence/cover.png)
+
 ![Final Lab 02 topology](evidence/final-topology.png)
 
 ## Executive summary

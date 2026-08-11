@@ -9,6 +9,8 @@
 
 [Download the Packet Tracer project](packet-tracer/Lab_01_Segmented_Enterprise_Network.pkt)
 
+![Lab 01 cover](evidence/cover.png)
+
 ![VLAN 40 connectivity evidence](../../docs/assets/lab-01-vlan40.png)
 
 ## Executive summary
