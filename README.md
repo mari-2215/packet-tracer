@@ -23,7 +23,7 @@ A small enterprise is divided into user, finance, server, IT, guest, management,
 
 **Open directly:** [Documentation](labs/lab-01-zero-trust-enterprise/README.md) · [Packet Tracer project](labs/lab-01-zero-trust-enterprise/packet-tracer/Lab_01_Segmented_Enterprise_Network.pkt) · [Validation video](labs/lab-01-zero-trust-enterprise/video/Lab_01_portfolio_FINAL.mp4) · [Validation matrix](labs/lab-01-zero-trust-enterprise/evidence/validation-matrix.md)
 
-![Lab 01 validation](docs/assets/lab-01-cover.png)
+![Lab 01 cover](labs/lab-01-zero-trust-enterprise/evidence/cover.png)
 
 ## Project 02 — Hybrid Cloud Security Architecture
 
@@ -31,7 +31,7 @@ A headquarters network connects to a simulated cloud environment with separate D
 
 **Open directly:** [Documentation](labs/lab-02-cloud-security/README.md) · [Packet Tracer project](labs/lab-02-cloud-security/packet-tracer/Lab_02_Hybrid_Cloud_Security.pkt) · [Validation video](labs/lab-02-cloud-security/video/Lab_02_Hybrid_Cloud_Security_Final.mp4) · [Evidence](labs/lab-02-cloud-security/evidence/)
 
-![Lab 02 final topology](labs/lab-02-cloud-security/evidence/final-topology.png)
+![Lab 02 cover](labs/lab-02-cloud-security/evidence/cover.png)
 
 ## Project 03 — SOC Incident Detection and Containment
 
@@ -39,7 +39,7 @@ This lab follows a compact incident-response cycle: establish a legitimate HTTP 
 
 **Open directly:** [Documentation](labs/lab-03-incident-response/README.md) · [Packet Tracer project](labs/lab-03-incident-response/packet-tracer/Lab_03_SOC_Incident_Response.pkt) · [Validation video](labs/lab-03-incident-response/video/Lab_03_SOC_Incident_Response_Final.mp4) · [Evidence](labs/lab-03-incident-response/evidence/)
 
-![Lab 03 topology](labs/lab-03-incident-response/evidence/01-topology.png)
+![Lab 03 cover](labs/lab-03-incident-response/evidence/cover.png)
 
 ## Project 04 — Healthcare Network Segmentation
 
@@ -47,17 +47,23 @@ A healthcare scenario separates clinical workstations, IoMT equipment, administr
 
 **Open directly:** [Documentation](labs/lab-04-healthcare-segmentation/README.md) · [Packet Tracer project](labs/lab-04-healthcare-segmentation/packet-tracer/Lab_04_Healthcare_Network_Segmentation.pkt) · [Validation video](labs/lab-04-healthcare-segmentation/video/Lab_04_Healthcare_Network_Segmentation_Final.mp4)
 
+![Lab 04 cover](labs/lab-04-healthcare-segmentation/evidence/cover.png)
+
 ## Project 05 — Resilient Branch Routing
 
 A headquarters and three branch routers use OSPF to exchange routes and provide an alternate path. The project records neighbor formation, route troubleshooting, link failure, convergence, and recovery concepts.
 
 **Open directly:** [Documentation](labs/lab-05-ospf-resilience/README.md) · [Packet Tracer project](labs/lab-05-ospf-resilience/packet-tracer/Lab_05_Resilient_Branch_Routing.pkt) · [Validation video](labs/lab-05-ospf-resilience/video/Lab_05_Resilient_Branch_Routing_Final.mp4)
 
+![Lab 05 cover](labs/lab-05-ospf-resilience/evidence/cover.png)
+
 ## Project 06 — Secure Management and IAM
 
 An isolated management plane restricts administrative access to an approved network. The lab demonstrates SSH-only VTY access, a source ACL, AAA/RADIUS design, RADIUS reachability, Telnet rejection, and a validated local break-glass fallback. The RADIUS authentication limitation is disclosed instead of being presented as a false success.
 
 **Open directly:** [Documentation](labs/lab-06-secure-administration/README.md) · [Packet Tracer project](labs/lab-06-secure-administration/packet-tracer/Lab_06_Secure_Management_IAM.pkt) · [Validation video](labs/lab-06-secure-administration/video/Lab_06_Secure_Management_IAM_Final.mp4)
+
+![Lab 06 cover](labs/lab-06-secure-administration/evidence/cover.png)
 
 ## Next project
 

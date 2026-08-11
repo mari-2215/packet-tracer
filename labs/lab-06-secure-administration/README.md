@@ -4,6 +4,8 @@
 
 **Status:** Validated with a documented Packet Tracer limitation
 
+![Lab 06 cover](evidence/cover.png)
+
 ## Executive summary
 
 This lab builds a dedicated management plane for a Cisco Packet Tracer environment. Administrative access is restricted to the management network, remote administration uses SSH instead of Telnet, and AAA is designed around a RADIUS service with a controlled local fallback account.

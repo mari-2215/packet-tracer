@@ -8,6 +8,8 @@
 - [Download the Packet Tracer project](packet-tracer/Lab_05_Resilient_Branch_Routing.pkt)
 - [Watch or download the edited demonstration](video/Lab_05_Resilient_Branch_Routing_Final.mp4)
 
+![Lab 05 cover](evidence/cover.png)
+
 ## Objective
 
 Connect a headquarters network and multiple branches with OSPF, establish route exchange, observe the operational topology, fail a link, and reason about convergence through an alternate path.

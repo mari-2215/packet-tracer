@@ -3,6 +3,8 @@
 **Author:** [mari-2215](https://github.com/mari-2215)  
 **Status:** Completed
 
+![Lab 03 cover](evidence/cover.png)
+
 ## Objective
 
 Simulate a small SOC incident-response cycle in Cisco Packet Tracer: establish a legitimate HTTP baseline, identify unauthorized traffic through edge ACL counters, contain the source with a specific deny rule, and prove that the legitimate service remains available.

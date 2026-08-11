@@ -8,6 +8,8 @@
 - [Download the Packet Tracer project](packet-tracer/Lab_04_Healthcare_Network_Segmentation.pkt)
 - [Watch or download the edited demonstration](video/Lab_04_Healthcare_Network_Segmentation_Final.mp4)
 
+![Lab 04 cover](evidence/cover.png)
+
 ## Objective
 
 Segment a simulated healthcare environment into clinical, IoMT, administrative, server, guest, and IT management zones. Apply least-privilege paths around sensitive services and demonstrate that authorized connectivity can coexist with isolation boundaries.
